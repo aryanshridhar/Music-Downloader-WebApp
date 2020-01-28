@@ -1,0 +1,55 @@
+.
+├── db.sqlite3
+├── filestructure.txt
+├── manage.py
+├── MusicDownloader
+│   ├── admin.py
+│   ├── apps.py
+│   ├── billbordscraping.py
+│   ├── forms.py
+│   ├── __init__.py
+│   ├── migrations
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   │       └── __init__.cpython-37.pyc
+│   ├── models.py
+│   ├── __pycache__
+│   │   ├── admin.cpython-37.pyc
+│   │   ├── apps.cpython-37.pyc
+│   │   ├── billbordscraping.cpython-37.pyc
+│   │   ├── __init__.cpython-37.pyc
+│   │   ├── models.cpython-37.pyc
+│   │   ├── urls.cpython-37.pyc
+│   │   └── views.cpython-37.pyc
+│   ├── static
+│   │   └── MusicDownloader
+│   │       ├── aboutmestyle.css
+│   │       ├── basestyle.css
+│   │       └── homestyle.css
+│   ├── templates
+│   │   └── MusicDownloader
+│   │       ├── aboutme.html
+│   │       ├── base.html
+│   │       └── home.html
+│   ├── templatetags
+│   │   ├── indexing.py
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   │       ├── indexing.cpython-37.pyc
+│   │       └── __init__.cpython-37.pyc
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── requirements.txt
+└── WebAppMusic
+    ├── __init__.py
+    ├── __pycache__
+    │   ├── __init__.cpython-37.pyc
+    │   ├── settings.cpython-37.pyc
+    │   ├── urls.cpython-37.pyc
+    │   └── wsgi.cpython-37.pyc
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
+
+12 directories, 40 files

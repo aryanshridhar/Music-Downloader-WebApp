@@ -1,0 +1,24 @@
+body{
+    background-color :#F8F8FF;
+  }
+form.bod{
+    padding: 40px;
+    border-radius: 40px;
+
+}
+div.disp{
+    display: inline-block;
+}
+h1.heading{
+  text-transform: uppercase;
+}
+nav{
+  border-bottom: 2px solid #454d55;
+}
+td.table-head{
+  text-transform : uppercase;
+  font-weight :bold;
+}
+div.over{
+  overflow-x: auto;
+}

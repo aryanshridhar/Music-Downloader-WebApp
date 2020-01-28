@@ -1,0 +1,55 @@
+{% extends 'MusicDownloader/base.html' %}
+{% load indexing %}
+{% load static %}
+    {% block head %}
+    <link rel="stylesheet" href = "{% static 'MusicDownloader/homestyle.css' %}">
+    {% endblock %}
+    {% block body %}
+      <div class="container mt-5">
+          <div class = 'row mt -5'>
+              <div class="col-md-12 text-center">
+                  <h1 class="display heading mb-5">Music Downloader</h1>
+              </div>
+          </div> 
+          <form method="POST">
+            {% csrf_token %}
+              <div class="card card-outline-secondary p-5">
+            <div class="form-group bod">
+              <label for = 'song'>Enter the name of song :</label>
+              <input type="text" class="form-control" required name = 'song' id = 'song'><br>
+              <small class="text-fade d-inline-block">Tip :- Please be a bit specific about the song</small>
+              <small class="text-fade d-block">Please wait after pressing the download button for the best quality....</small>
+            </div>
+            <button type="submit" class="btn btn-primary mt-4 d-block">Download !</button>
+            </div>
+          </form>
+          <div class="row mt-5"></div>
+            <div class="col-12 mt-4">
+                <h4 class="display">Latest 100 Billboard Hits of this week :- </h4>
+                <div class="card card-outline-secondary mt-4 over">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <td class = 'table-head'>No</td>
+                                <td class = 'table-head'>Songs</td>
+                                <td class = 'table-head'>Artist</td>
+                                <td class = 'table-head'>Download</td>
+                            </tr>
+                        <tbody>
+                          {% for i,j in song %}
+                            <tr>
+                              <td>{{ forloop.counter }}</td>
+                              <td>{{ i.0 }}</td>
+                              <td>{{ i.1 }}</td>
+                              <td class="text-center">
+                                <a class="custom" href = 'downloading/{{ full_name|indexing:j }}'><button class="btn btn-success">Download</button></td></a>
+                              </tr>
+                          {% endfor %}
+                        </tbody>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+          </div>
+          </div>
+        {% endblock %}

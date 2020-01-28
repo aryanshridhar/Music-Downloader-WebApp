@@ -1,0 +1,26 @@
+{% extends 'MusicDownloader/base.html' %}
+
+{% load static %}
+    {% block head %}
+    <link rel = 'stylesheet' href="{% static 'MusicDownloader/aboutmestyle.css' %}">
+    {% endblock %}
+
+{% block body %}
+<div class="container-fluid main1">
+    <div class="about1">
+        <div class = 'row'>
+            <div class="col-md-12 text-center">
+                <h1 class="display-3">Let's Socialize</h1>
+            </div>
+        </div>
+        <div class="about1 socialize">
+            <div class="s-m">
+              <a class="fa fa-github" href="https://github.com/aryanshridhar" target="_blank"></a>
+              <a class="fa fa-twitter" href="https://twitter.com/ShridharAryan" target="_blank"></a>
+              <a class="fa fa-google" href="https://mail.google.com/mail/u/0/#inbox" target="_blank"></a>
+              <a class="fa fa-instagram" href="https://www.instagram.com/aryanshridhar_007/" target="_blank"></a>
+              <a class="fa fa-facebook" href="https://www.facebook.com/aryan.shridhar.1" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
