@@ -3,7 +3,7 @@ Music Downloader Website built using Django web framework .
 
 <strong>Instructions : </strong>
 <ol>
-<li>Clone the respository using </li>
+  <li>Clone the respository using the following command <pre>git clone https://github.com/aryanshridhar/Music-Downloader-WebApp.git</pre></li>
 <br>
 <li>Install all the dependencies by running the following command in terminal : <pre>pip install -r requirements.txt</pre></li>
 <li>Start the local hosted server by <pre>python manage.py runserver</pre></li>
