@@ -6,7 +6,7 @@ from .billbordscraping import TopSongFind
 
 
 def get_song_link(song_name):
-    query = urllib.parse.quote(song_name)
+    query = urllib.parse.quote(song_name + " lyrics")
     url = "https://www.youtube.com/results?search_query=" + query
     response = urllib.request.urlopen(url)
     html = response.read()
