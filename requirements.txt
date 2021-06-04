@@ -1,4 +1,4 @@
 requests==2.22.0
-Django==2.2.20
+Django==2.2.21
 pafy==0.5.5
 beautifulsoup4==4.8.2
